@@ -15,3 +15,20 @@
     const passengerAge = Number(prompt('Inserisci l\'età del passeggero:'));
 
 // #endregion User data obtaining section
+
+
+
+// #region Travel price calculation section
+
+    // Calculate total travel price
+    let totalTravelPrice = kmNumber * KM_PRICE;
+
+// #endregion Travel price calculation section
+
+
+
+// #region Output section
+
+    console.log('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
+
+// #endregion Output section
