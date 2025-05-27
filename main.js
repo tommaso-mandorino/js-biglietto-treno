@@ -41,9 +41,13 @@
             // Apply underage discount
             totalTravelPrice = totalTravelPrice - ( (totalTravelPrice / 100 ) * UNDERAGE_DISCOUNT_PERCENTAGE );
 
-        } else if ( passengerAge > SENIOR_AGE ) {
+        }
+        // ELSE IF passenger age is senior 
+        else if ( passengerAge > SENIOR_AGE ) {
+
             // Apply senior discount
             totalTravelPrice = totalTravelPrice - ( (totalTravelPrice / 100 ) * SENIOR_DISCOUNT_PERCENTAGE );
+
         }
 
     // #endregion Discount application section
@@ -54,9 +58,13 @@
 
 // #region Output section
 
-    // Output formatting for italian price format
+    // Price rounding
+    totalTravelPrice = totalTravelPrice.toFixed(2);
+
+    // Price formatting for italian comma price format
     totalTravelPrice = totalTravelPrice.toString().replace('.', ',');
 
+    // Price output
     console.log('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
 
 // #endregion Output section
