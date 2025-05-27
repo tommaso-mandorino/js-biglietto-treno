@@ -67,10 +67,12 @@
     // Price output
     alert('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
 
-    /*
-        Reload the page for infinite calculations
-        (no problems for the browser navigation since alert doesn't impose on other tabs)
-    */
-    location.reload();
-
 // #endregion Output section
+
+
+
+/*
+    Reload the page for infinite calculations
+    (no problems for the browser navigation since alert doesn't impose on other tabs)
+*/
+location.reload();
