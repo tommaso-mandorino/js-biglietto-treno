@@ -29,6 +29,9 @@
 
 // #region Output section
 
+    // Output formatting for italian price format
+    totalTravelPrice = totalTravelPrice.toString().replace('.', ',');
+
     console.log('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
 
 // #endregion Output section
