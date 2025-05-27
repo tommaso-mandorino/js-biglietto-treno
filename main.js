@@ -65,6 +65,6 @@
     totalTravelPrice = totalTravelPrice.toString().replace('.', ',');
 
     // Price output
-    console.log('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
+    alert('Il prezzo totale del viaggio è di: ' + totalTravelPrice + " €");
 
 // #endregion Output section
