@@ -71,8 +71,10 @@
 
 
 
-/*
-    Reload the page for infinite calculations
-    (no problems for the browser navigation since alert doesn't impose on other tabs)
-*/
-location.reload();
+// IF user wants to calculate again
+if ( confirm("Vuoi eseguire un altro calcolo?") ) {
+
+    // Reload the page
+    location.reload();
+
+}
