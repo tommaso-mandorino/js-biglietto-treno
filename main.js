@@ -3,6 +3,16 @@
     // Defined price for 1 km
     const KM_PRICE = 0.21;
 
+    // Defined underage age
+    const UNDERAGE_AGE = 18;
+    // Defined underage discount percentage
+    const UNDERAGE_DISCOUNT_PERCENTAGE = 20;
+
+    // Defined senior age
+    const SENIOR_AGE = 65;
+    // Defined senior discount percentage
+    const SENIOR_DISCOUNT_PERCENTAGE = 40;
+
 // #endregion Constants declaration section
 
 
@@ -22,6 +32,21 @@
 
     // Calculate total travel price
     let totalTravelPrice = kmNumber * KM_PRICE;
+
+    // #region Discount application section
+
+        // IF passenger age is underage
+        if ( passengerAge < UNDERAGE_AGE ) {
+
+            // Apply underage discount
+            totalTravelPrice = totalTravelPrice - ( (totalTravelPrice / 100 ) * UNDERAGE_DISCOUNT_PERCENTAGE );
+
+        } else if ( passengerAge > SENIOR_AGE ) {
+            // Apply senior discount
+            totalTravelPrice = totalTravelPrice - ( (totalTravelPrice / 100 ) * SENIOR_DISCOUNT_PERCENTAGE );
+        }
+
+    // #endregion Discount application section
 
 // #endregion Travel price calculation section
 
